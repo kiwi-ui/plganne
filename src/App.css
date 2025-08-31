@@ -7,9 +7,9 @@
     background-color: var(--button-color);
     color: white;
 }
-.text-warning {
+.text-warning2 {
     color: var(--bs-primary-text) !important;
 }
-.bg-primary {
+.bg-primary2 {
     background-color: var(--bs-primary-text) !important;
 }
