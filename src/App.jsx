@@ -1,33 +1,70 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useParams } from 'react-router-dom';
+import Cover from './pages/Cover';
+import Opening from './pages/Opening';
+import Surah from './components/Surah';
+import Couple from './pages/Couple';
+import Schedule from './pages/schedule';
+import Events from './pages/Events';
+import Wish from './pages/Wish';
+import { Toaster } from 'react-hot-toast';
+import Closing from './components/Closing';
+import  { useAudioRefService ,randomIndex } from './service/audioRefService';
+import MusicPlayer from './components/MusicPlayer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [scrollBehavior, setScrollBehavior] = useState(false);
+  const [openMainPage, setOpenMainPage] = useState(false);
+  const audioRef = useAudioRefService();
+  const songIndex = randomIndex;
+  const { name } = useParams();
+  const decodedName = decodeURIComponent(name).replace(/\+/g, " ");
+  const capitalizedName = decodedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     <>
+       {
+          !openMainPage ?
+          <>
+            {/* <BorderFlower /> */}
+            <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
+          </>
+          
+          :
+          
+          <section className='position-relative' style={{ height: '100dvh'}}>
+
+            <Opening />
+            <Surah />
+            <Couple />
+            <Schedule />
+            <Events />
+            <Wish />
+            <Closing songIndex={activeIndex} />
+            {/* <BorderFlower key={activeIndex} /> */}
+            {/* <div className={`position-relative frame px-4 justify-content-center flex-column d-flex mx-auto`} style={{ height: '90%'}}>
+              <div className='container py-3' style={{ zIndex: 2 }}>
+                {activeIndex === 0 && <Home />}
+                {activeIndex === 1 && <Couple />}
+                {activeIndex === 2 && <Akad />}
+                {activeIndex === 3 && <Resepsi />}
+                {activeIndex === 4 && <Location />}
+                {activeIndex === 5 && <Absen name={name}/>}
+                {activeIndex === 6 && <Rsvp openMainPage={openMainPage} setScrollBehavior={setScrollBehavior}/>}
+                {activeIndex === 7 && <Closing songIndex={songIndex} />}
+              </div>
+            </div>
+
+            <Navbar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+            <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} /> */}
+          <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+
+          </section>
+        }
+       <Toaster position="top-center" />
     </>
   )
 }

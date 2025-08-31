@@ -1,0 +1,144 @@
+import { useEffect, useState } from 'react';
+import style from './index.module.css';
+import { RiSendPlaneFill } from 'react-icons/ri';
+import { addWish, subscribeWishes } from '../../service/wishService';
+import toast from 'react-hot-toast';
+import { formatDistance } from 'date-fns';
+import { background, textColor } from '../../utlis/profileStyles';
+
+const Wish = () => {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [wishes, setWishes] = useState([]);
+  const [attendance, setAttendance] = useState('');
+  // const [modal, setModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const unsubscribe = subscribeWishes(setWishes);
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+  
+  const toggleModal = (e) => {
+    e.preventDefault();
+    // setModal(!modal);
+  };
+
+  const sendWish = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      if (!name.trim() || !message.trim()) return alert("Masih ada yang belum terisi");
+      addWish( name.trim(), message.trim(), attendance);
+      
+      setName("");
+      setMessage("");
+      toast.success( "Wish sent successfully" );
+    }
+    catch (error) {
+      setLoading(false);
+      toast.error(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className={`${style.wish} py-5`}>
+      <div className="container text-center">
+        <div className="">
+          <div className="text-dark" >
+            <p className="fw-bold fs-3 mb-2 text-warning animate__animated animate__zoomIn animate__slower">Wishes</p>
+            <p className="animate__animated animate__zoomIn animate__slower">Sampaikan harapan terbaik anda untuk mempelai</p>
+
+            <form className="text-start" onSubmit={sendWish}>
+              <div className="mb-3">
+                <input
+                  className="form-control animate__animated animate__zoomInRight animate__slower"
+                  placeholder="Nama"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+
+              {/* Kehadiran */}
+              {/* <div className="mb-3">
+                <label className="form-label">Kehadiran</label>
+                <select
+                  className="form-control"
+                  value={attendance}
+                  onChange={(e) => setAttendance(e.target.value)}
+                >
+                  <option value="" disabled>Pilih Kehadiran</option>
+                  <option value="true">Hadir</option>
+                  <option value="false">Tidak Hadir</option>
+                </select>
+              </div> */}
+
+              {/* Harapan */}
+              <div className="mb-3">
+                {/* <label className="form-label">Harapan</label> */}
+                <textarea
+                  className="form-control animate__animated animate__zoomInLeft animate__slower"
+                  placeholder="Your wish"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  style={{ minHeight: 80 }}
+                />
+              </div>
+
+              {/* Tombol */}
+              <div className="text-end">
+                <button className="btn bg-warning d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill animate__animated animate__fadeInLeft" disabled={loading} type="submit">
+                  {
+                    loading ? 
+                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 
+                      :
+                    <div className='d-flex flex-row align-items-center gap-2'>
+                      <RiSendPlaneFill />
+                      <p className='mb-0'>Send Wish</p>
+                    </div>
+                  }
+                </button>
+              </div>
+            </form>
+
+            <div id='wishes' className={`border-top border-2 border-dark-subtle pt-3 mt-4 `}>
+              <ul className="w-100 position-relative ps-4 h-50" style={{ overflowY: 'auto', maxHeight: '300px' }}>
+                {wishes.map((item, index) => {
+                  const createdAt = item.created_at?.toDate?.() || new Date();
+                  const timeAgo = formatDistance(createdAt, new Date(), { addSuffix: true });
+                  const randomIndex = item.randomIndex ?? 0;
+                  
+                  return (
+                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2 animate__animated animate__zoomIn animate__slower">
+                      <div
+                        className={`${background[randomIndex]} col-2 d-flex justify-content-center align-items-center rounded-circle`}
+                        style={{ height: 50, width: 50 }}
+                      >
+                        <p className={`${textColor[randomIndex]} mb-0 fs-5`}>
+                          {item.name.charAt(0)}
+                        </p>
+                      </div>
+
+                      <div className="col-8 text-start d-flex flex-column justify-content-center">
+                        <div className="d-flex text-start mb-1 flex-column flex-wrap">
+                          <p className="mb-0 fw-semibold text-break w-75">{item.name}</p>
+                          <p className='mb-0 fw-light' style={{ fontSize: '0.7rem' }}>{item.created_at ? timeAgo : 'just now'}</p>
+                        </div>
+                        <p className="mb-0 text-break">{item.message}</p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Wish

@@ -1,0 +1,49 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import entrance from '../../assets/entrance3.mp4';
+import Reminder from '../../components/Reminder';
+
+const Opening = () => {
+  return (
+    <div className='d-flex align-items-center' style={{ height: '100dvh'}}>
+      <DotLottieReact
+        src="https://lottie.host/d44e2b6d-383a-4743-9a71-da5b1fce1b47/I7XQgFVPtn.lottie"
+        loop
+        autoplay
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          zIndex: 5, // di atas video
+          pointerEvents: "none" // biar ga ganggu klik
+        }}
+      />
+
+      <div className="container">
+        <video 
+          src={entrance}
+          autoPlay 
+          muted 
+          playsInline 
+          style={{ width: '100%', objectFit: 'cover' }}
+          className='position-absolute top-0 start-0'
+        ></video>
+
+        <div className='position-relative text-center' style={{ zIndex: 10}}>
+          <p className="andada fw-light">THE WEDDING OF</p>
+          <div className="garlicha text-center py-3">
+              <p className="text-warning fw-semibold mb-0 me-5" style={{fontSize: '3.3rem'}}>Anonim &</p>
+              <p className="text-warning fw-semibold ms-5" style={{fontSize: '3.3rem', marginTop:'-1rem'}}>Unonim</p>
+          </div>
+
+          <p className="andada pb-1 fw-semibold">18.11.2025</p>
+          <div className="d-flex justify-content-center align-items-center mt-3">
+            <button type='button' className="btn rounded-pill px-3 py-1 bg-warning shadow text-white fw-semibold">Save The Date</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  )
+}
+
+export default Opening
