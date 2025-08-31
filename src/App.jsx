@@ -12,6 +12,7 @@ import { Toaster } from 'react-hot-toast';
 import Closing from './components/Closing';
 import  { useAudioRefService ,randomIndex } from './service/audioRefService';
 import MusicPlayer from './components/MusicPlayer';
+import 'animate.css';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,7 +37,6 @@ function App() {
           :
           
           <section className='position-relative' style={{ height: '100dvh'}}>
-
             <Opening />
             <Surah />
             <Couple />
