@@ -5,7 +5,7 @@ import Cover from './pages/Cover';
 import Opening from './pages/Opening';
 import Surah from './components/Surah';
 import Couple from './pages/Couple';
-import Schedule from './pages/schedule';
+import Schedule from './pages/Schedule';
 import Events from './pages/Events';
 import Wish from './pages/Wish';
 import { Toaster } from 'react-hot-toast';
