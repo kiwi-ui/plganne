@@ -1,13 +1,11 @@
-import React from 'react'
 import { CiLock, CiUnlock } from 'react-icons/ci';
-import { useNavigate } from 'react-router-dom'
 import style from './index.module.css'
 
 const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {
     e.preventDefault();
     setIsPlaying(true);
-    // audioRef.current.play();
+    audioRef.current.play();
     setTimeout(() => {
       setOpenMainPage(true);
       setScrollBehavior(true);
