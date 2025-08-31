@@ -49,7 +49,7 @@ const Wish = () => {
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >
-            <p className="fw-bold fs-3 mb-2 text-warning animate__animated animate__zoomIn animate__slower">Wishes</p>
+            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning animate__animated animate__zoomIn animate__slower">Wishes</p>
             <p className="animate__animated animate__zoomIn animate__slower">Sampaikan harapan terbaik anda untuk mempelai</p>
 
             <form className="text-start" onSubmit={sendWish}>
@@ -90,7 +90,7 @@ const Wish = () => {
 
               {/* Tombol */}
               <div className="text-end">
-                <button className="btn bg-warning d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill animate__animated animate__fadeInLeft" disabled={loading} type="submit">
+                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill animate__animated animate__fadeInLeft" disabled={loading} type="submit">
                   {
                     loading ? 
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 

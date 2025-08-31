@@ -31,13 +31,13 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
         <div className={`${style.cover} d-flex flex-column justify-content-center align-items-center h-100`}>
           <div style={{ zIndex: 2 }}>
             <p className="andada animate__animated animate__zoomIn animate__slower mb-0">The Wedding of</p>
-            <p className="garlicha fw-semibold text-warning animate__animated animate__slideInRight animate__slower mb-4 mt-4" style={{  fontSize: '2.6rem', letterSpacing: '0.2rem' }}>
+            <p className="garlicha fw-semibold text-warning2 animate__animated animate__slideInRight animate__slower mb-4 mt-4" style={{  fontSize: '2.6rem', letterSpacing: '0.2rem' }}>
               Anonim
             </p>
-            <p className="garlicha fw-semibold text-warning animate__animated animate__zoomIn animate__slower mb-4 " style={{ fontSize: '2rem', letterSpacing: '0.2rem' }}>
+            <p className="garlicha fw-semibold text-warning2 animate__animated animate__zoomIn animate__slower mb-4 " style={{ fontSize: '2rem', letterSpacing: '0.2rem' }}>
               &
             </p>
-            <p className="garlicha fw-semibold text-warning animate__animated animate__slideInLeft animate__slower mb-4" style={{  fontSize: '2.6rem', letterSpacing: '0.2rem' }}>
+            <p className="garlicha fw-semibold text-warning2 animate__animated animate__slideInLeft animate__slower mb-4" style={{  fontSize: '2.6rem', letterSpacing: '0.2rem' }}>
               Anonim
             </p>
           </div>
@@ -46,7 +46,7 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
             <div className="">
               <p className="mb-0 animate__animated animate__zoomIn animate__delay-2s animate__slower">Kepada yang terhormat</p>
               <p className="mb-0 animate__animated animate__zoomIn animate__delay-2s animate__slower">Bapak/Ibu/Saudara/i</p>
-              <p className="my-1 text-warning fw-bold animate__animated animate__zoomIn animate__delay-2s animate__slower fs-5 pt-2">{name}</p>
+              <p className="my-1 text-warning2 fw-bold animate__animated animate__zoomIn animate__delay-2s animate__slower fs-5 pt-2">{name}</p>
             </div>
           </div>
           
