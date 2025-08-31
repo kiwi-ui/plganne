@@ -1,11 +1,12 @@
 import { CiLock, CiUnlock } from 'react-icons/ci';
 import style from './index.module.css'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {
     e.preventDefault();
     setIsPlaying(true);
-    audioRef.current.play();
+    // audioRef.current.play();
     setTimeout(() => {
       setOpenMainPage(true);
       setScrollBehavior(true);
@@ -15,6 +16,18 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
 
   return (
       <section className={`position-relative text-center`} style={{ height: '100dvh' }}>      
+        <DotLottieReact
+        src="https://lottie.host/d44e2b6d-383a-4743-9a71-da5b1fce1b47/I7XQgFVPtn.lottie"
+        loop
+        autoplay
+        style={{
+          position: "absolute",
+          top: 0,
+          width: "100%",
+          zIndex: 5, // di atas video
+          pointerEvents: "none" // biar ga ganggu klik
+        }}
+      />
         <div className={`${style.cover} d-flex flex-column justify-content-center align-items-center h-100`}>
           <div style={{ zIndex: 2 }}>
             <p className="andada animate__animated animate__zoomInLeft animate__slower mb-0">The Wedding of</p>

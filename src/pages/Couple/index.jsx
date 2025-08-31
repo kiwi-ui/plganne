@@ -14,7 +14,7 @@ const Couple = () => {
           <p className="andada">& (Almh) Ibu Dewi Sudarwati</p>
         </div>
         <div className='d-inline d-flex justify-content-start'>
-          <div className="d-flex bg-primary p-2 rounded-circle justify-content-center align-items-center">
+          <div className="d-flex bg-primary p-2 border border-1 border-white rounded-circle justify-content-center align-items-center">
             <CgInstagram className="fs-5 text-white"/>
           </div>
         </div>
@@ -29,7 +29,7 @@ const Couple = () => {
           <p className="andada">& (Almh) Ibu Dewi Sudarwati</p>
         </div>
         <div className='d-inline d-flex justify-content-end'>
-          <div className="d-flex bg-primary p-2 rounded-circle justify-content-center align-items-center">
+          <div className="d-flex bg-primary p-2 border border-1 border-white rounded-circle justify-content-center align-items-center">
             <CgInstagram className="fs-5 text-white"/>
           </div>
         </div>
