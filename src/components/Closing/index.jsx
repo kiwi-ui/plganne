@@ -13,13 +13,13 @@ const Closing = ({songIndex}) => {
                 </div>
 
                 <div>
-                <div className={`fw-semibold`}>
+                <div>
                     <p className="animate__animated animate__flipInX animate__slower mb-0">Kami yang berbahagia</p>
                 </div>
                 <div className="d-flex flex-row justify-content-center align-items-center gap-4 animate__animated animate__fadeInDown">
-                    <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Sisin Polagan</p>
+                    <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Sisin</p>
                     <p className="greatVibes mb-0" style={{ fontSize: '1.6rem' }}>&</p>
-                    <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Mas Sapah reh sin?</p>
+                    <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Mas?</p>
                 </div>
                 {/* <div className="row py-2 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
                     <div className='col-6 animate__animated animate__rotateInDownRight d-flex flex-column border border-warning border-top-0 border-bottom-0 border-start-0'>

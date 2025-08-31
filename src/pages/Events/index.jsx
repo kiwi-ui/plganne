@@ -20,7 +20,7 @@ const Events = () => {
                                     <p className="fw-semibold">Ds Pagu Kec. Wates Kab. Kediri</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-warning border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>
+                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Events = () => {
                                     <p className="fw-semibold">Ds Pagu Kec. Wates Kab. Kediri</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-warning border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>
+                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>
                                 </div>
                             </div>
                         </div>

@@ -50,7 +50,7 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
             </div>
           </div>
           
-          <button className="btn shadow bg-warning rounded-pill d-flex flex-row align-items-center gap-2 text-black animate__animated animate__zoomIn animate__delay-1s cormorantG py-1 px-3 text-white fw-semibold" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2 }}>
+          <button className="btn shadow bg-primary2 rounded-pill d-flex flex-row align-items-center gap-2 text-black animate__animated animate__zoomIn animate__delay-1s cormorantG py-1 px-3 text-white fw-semibold" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2 }}>
             {isPlaying ? <CiUnlock className='animate__animated animate__zoomIn '/> : <CiLock />} <p className="mb-0">Buka Undangan</p>
           </button>
         </div>

@@ -37,7 +37,7 @@ const Opening = () => {
 
           <p className="andada pb-1 fw-semibold animate__animated animate__zoomIn animate__slow">18.11.2025</p>
           <div className="d-flex justify-content-center align-items-center mt-3">
-            <button type='button' className="btn rounded-pill px-3 py-1 bg-warning shadow text-white fw-semibold animate__animated animate__fadeInDown">Save The Date</button>
+            <button type='button' className="btn rounded-pill px-3 py-1 bg-primary2 shadow text-white fw-semibold animate__animated animate__fadeInDown">Save The Date</button>
           </div>
         </div>
       </div>
