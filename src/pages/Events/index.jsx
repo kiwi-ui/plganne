@@ -12,12 +12,12 @@ const Events = () => {
                                 <p className="my-3 garlicha text-warning2 fw-semibold" style={{fontSize: '3rem'}}>Akad Nikah</p>
                             </div>
 
-                            <div className="mb-4 mx-auto andada" style={{width: '85%'}}>
-                                <p className="fw-semibold mb-0 ">Minggu, 30 Desember 2025</p>
-                                <p>Pukul : 10.00 WIB – Selesai</p>
+                            <div className="mb-4 mt-4 mx-auto" style={{width: '85%'}}>
+                                <p className="fw-semibold mb-0 ">Minggu, 19 Oktober 2025</p>
+                                <p>Pukul : 07.30 WIB – Selesai</p>
                                 <div>
-                                    <p className="mb-0">Alamat : Kediaman Mempelai Wanita</p>
-                                    <p className="fw-semibold">Ds Pagu Kec. Wates Kab. Kediri</p>
+                                    <p className="mb-0">Masjid Agung Asy-Syuhada (Masjid Jami’)</p>
+                                    <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
                                     <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>
@@ -31,11 +31,11 @@ const Events = () => {
                             </div>
 
                             <div className="mb-4 mt-4 mx-auto" style={{width: '85%'}}>
-                                <p className="fw-semibold mb-0 ">Minggu, 30 Desember 2025</p>
-                                <p>Pukul : 10.00 WIB – Selesai</p>
+                                <p className="fw-semibold mb-0 ">Minggu, 19 Oktober 2025</p>
+                                <p>Pukul : 07.30 WIB – Selesai</p>
                                 <div>
-                                    <p className="mb-0">Alamat : Kediaman Mempelai Wanita</p>
-                                    <p className="fw-semibold">Ds Pagu Kec. Wates Kab. Kediri</p>
+                                    <p className="mb-0">Masjid Agung Asy-Syuhada (Masjid Jami’)</p>
+                                    <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
                                     <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold">Lokasi Acara</button>

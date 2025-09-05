@@ -5,44 +5,77 @@ import { addWish, subscribeWishes } from '../../service/wishService';
 import toast from 'react-hot-toast';
 import { formatDistance } from 'date-fns';
 import { background, textColor } from '../../utlis/profileStyles';
+import { webapp } from '../../utlis/googlesheetDetails';
 
 const Wish = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [kehadiran, setKehadiran] = useState("");
   const [wishes, setWishes] = useState([]);
-  const [attendance, setAttendance] = useState('');
-  // const [modal, setModal] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+      timestamp: new Date(),
+      name: '',
+      kehadiran: ''
+  });
+
   useEffect(() => {
+    setFormData((prevData) => ({
+      ...prevData,
+      name: name
+    }))
+
     const unsubscribe = subscribeWishes(setWishes);
     return () => {
       unsubscribe();
     };
-  }, []);
+  }, [])
   
-  const toggleModal = (e) => {
-    e.preventDefault();
-    // setModal(!modal);
+  const kehadiranListener = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const sendWish = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    if (!name.trim() || !message.trim()) {
+      alert("Masih ada yang belum terisi");
+      setLoading(false);
+      return;
+    }
+
     try {
-      if (!name.trim() || !message.trim()) return alert("Masih ada yang belum terisi");
-      addWish( name.trim(), message.trim(), attendance);
-      
+      const CompleteformData = new FormData();
+      CompleteformData.append("timestamp", new Date());
+      CompleteformData.append("name", name.trim());
+      CompleteformData.append("kehadiran", formData.kehadiran);
+      CompleteformData.append("message", message.trim());
+
+      const res = await fetch(webapp, {
+        method: "POST",
+        body: CompleteformData,
+      });
+
+      if (!res.ok) throw new Error("Gagal kirim ke Google Sheet");
+
+      addWish(name.trim(), message.trim());
+
       setName("");
       setMessage("");
-      toast.success( "Wish sent successfully" );
-    }
-    catch (error) {
-      setLoading(false);
+      setFormData({ name: "", kehadiran: "" });
+      toast.success("Wish sent successfully");
+    } catch (error) {
       toast.error(error.message);
     } finally {
       setLoading(false);
     }
   };
+
 
   return (
     <div className={`${style.wish} py-5`}>
@@ -52,7 +85,7 @@ const Wish = () => {
             <p className="fw-bold fs-3 mb-2 text-warning2 text-warning animate__animated animate__zoomIn animate__slower">Wishes</p>
             <p className="animate__animated animate__zoomIn animate__slower">Sampaikan harapan terbaik anda untuk mempelai</p>
 
-            <form className="text-start" onSubmit={sendWish}>
+            <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
               <div className="mb-3">
                 <input
                   className="form-control animate__animated animate__zoomInRight animate__slower"
@@ -63,18 +96,20 @@ const Wish = () => {
               </div>
 
               {/* Kehadiran */}
-              {/* <div className="mb-3">
+              <div className="mb-3">
                 <label className="form-label">Kehadiran</label>
                 <select
                   className="form-control"
-                  value={attendance}
-                  onChange={(e) => setAttendance(e.target.value)}
+                  name="kehadiran"
+                  value={formData.kehadiran}
+                  onChange={kehadiranListener}   // ✅ pakai ini
                 >
                   <option value="" disabled>Pilih Kehadiran</option>
-                  <option value="true">Hadir</option>
-                  <option value="false">Tidak Hadir</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
-              </div> */}
+              </div>
+
 
               {/* Harapan */}
               <div className="mb-3">

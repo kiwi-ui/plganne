@@ -13,6 +13,7 @@ import Closing from './components/Closing';
 import  { useAudioRefService ,randomIndex } from './service/audioRefService';
 import MusicPlayer from './components/MusicPlayer';
 import 'animate.css';
+import Attendance from './pages/Attendance';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -43,6 +44,7 @@ function App() {
             <Schedule />
             <Events />
             <Wish />
+            <Attendance name={capitalizedName}/>
             <Closing songIndex={activeIndex} />
             {/* <BorderFlower key={activeIndex} /> */}
             {/* <div className={`position-relative frame px-4 justify-content-center flex-column d-flex mx-auto`} style={{ height: '90%'}}>

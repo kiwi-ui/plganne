@@ -10,7 +10,7 @@ export const addWish = async (name, message, attendance) => {
     created_at: serverTimestamp(),
     name,
     message,
-    attendance,
+    // attendance,
     randomIndex
   });
 };  

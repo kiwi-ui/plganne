@@ -8,9 +8,9 @@ const Couple = () => {
       <p className="andada">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
       <div className="text-start py-4 ps-md-5 ms-md-5">
       
-        <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Sisin Polagan</p>
+        <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Anni Syntya, S.Gz</p>
         <div className="">
-          <p className="andada mb-0">Putri Kedua dari Bapak M. Dawam</p>
+          <p className="andada mb-0">Putri Bapak H. Husni Tamrin dan Ibu Hj. Sufiatul Jannah</p>
           <p className="andada">& Ibu Dewi Sudarwati</p>
         </div>
         <div className='d-inline d-flex justify-content-start'>
@@ -23,10 +23,10 @@ const Couple = () => {
       <p className="py-4 fs-3 adine">&</p>
 
       <div className="text-end py-4 pe-md-5 me-md-5">
-        <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Mas Sapah reh sin?</p>
+        <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Ikhtiar Rahmatullah, S.IP.</p>
         <div className="">
-          <p className="andada mb-0">Putri Kedua dari Bapak M. Dawam</p>
-          <p className="andada">& Ibu Dewi Sudarwati</p>
+          <p className="andada mb-0">Putra Bapak H. Moh. Kamil Mahfud</p>
+          <p className="andada"> & Ibu Hj. Imamah</p>
         </div>
         <div className='d-inline d-flex justify-content-end'>
           <div className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center">
