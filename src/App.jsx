@@ -44,7 +44,7 @@ function App() {
             <Schedule />
             <Events />
             <Wish />
-            <Attendance name={capitalizedName}/>
+            {/* <Attendance name={capitalizedName}/> */}
             <Closing songIndex={activeIndex} />
             {/* <BorderFlower key={activeIndex} /> */}
             {/* <div className={`position-relative frame px-4 justify-content-center flex-column d-flex mx-auto`} style={{ height: '90%'}}>

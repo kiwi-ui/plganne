@@ -55,17 +55,17 @@ const Closing = ({songIndex}) => {
                     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" href="https://wa.link/0gd2cu">
                         <IoLogoWhatsapp className="text-warning2 fs-3"/>
                     </a>
-                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=tX73H2FRcK8">
+                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=K3h4I1NG5t8&list=RDK3h4I1NG5t8&start_radio=1">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
                     {songIndex ==  1 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=Cj7E2YB3pe0">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=J0yGi5Y4ur0">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
                     {songIndex ==  2 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=INnehEK0Yec">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' href="https://www.youtube.com/watch?v=byFVhphHw3M">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
