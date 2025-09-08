@@ -33,18 +33,16 @@ function App() {
   return (
      <>
        {
-          !openMainPage ?
-          <>
-            {/* <BorderFlower /> */}
-            <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
-          </>
+          // !openMainPage ?
+          // <>
+          //   {/* <BorderFlower /> */}
+          //   <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
+          // </>
           
-          :
+          // :
           
           <section className='position-relative' style={{ height: '100dvh'}}>
-            <div data-aos="zoom-in-up">
-              <Opening />
-            </div>
+            <Opening />
             <Surah />
             <Couple />
             <Schedule />
