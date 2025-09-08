@@ -2,6 +2,7 @@
     background-image: url('../../assets/events.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .events::after {
     content: '';

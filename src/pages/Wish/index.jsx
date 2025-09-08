@@ -78,7 +78,7 @@ const Wish = () => {
 
 
   return (
-    <div className={`${style.wish} py-5`}>
+    <div className={` ${style.wish} py-5`}>
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >

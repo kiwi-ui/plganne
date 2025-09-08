@@ -44,25 +44,9 @@ function App() {
             <Schedule />
             <Events />
             <Wish />
-            {/* <Attendance name={capitalizedName}/> */}
+            <Attendance name={capitalizedName}/>
             <Closing songIndex={activeIndex} />
-            {/* <BorderFlower key={activeIndex} /> */}
-            {/* <div className={`position-relative frame px-4 justify-content-center flex-column d-flex mx-auto`} style={{ height: '90%'}}>
-              <div className='container py-3' style={{ zIndex: 2 }}>
-                {activeIndex === 0 && <Home />}
-                {activeIndex === 1 && <Couple />}
-                {activeIndex === 2 && <Akad />}
-                {activeIndex === 3 && <Resepsi />}
-                {activeIndex === 4 && <Location />}
-                {activeIndex === 5 && <Absen name={name}/>}
-                {activeIndex === 6 && <Rsvp openMainPage={openMainPage} setScrollBehavior={setScrollBehavior}/>}
-                {activeIndex === 7 && <Closing songIndex={songIndex} />}
-              </div>
-            </div>
-
-            <Navbar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-            <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} /> */}
-          <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
+            <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
 
           </section>
         }

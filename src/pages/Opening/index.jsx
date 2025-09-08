@@ -1,10 +1,9 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import entrance from '../../assets/entrance3.mp4';
-import Reminder from '../../components/Reminder';
 
 const Opening = () => {
   return (
-    <div className='d-flex align-items-center' style={{ height: '100dvh'}}>
+    <div className='d-flex align-items-center vh-100 position-relative overflow-hidden' style={{ backgroundColor: '#f8f9fa' }}>
       <DotLottieReact
         src="https://lottie.host/d44e2b6d-383a-4743-9a71-da5b1fce1b47/I7XQgFVPtn.lottie"
         loop
@@ -24,8 +23,8 @@ const Opening = () => {
           autoPlay 
           muted 
           playsInline 
-          style={{ width: '100%', objectFit: 'cover' }}
-          className='position-absolute top-0 start-0'
+          style={{ objectFit: 'cover'}}
+          className='position-absolute start-0 w-100 bottom-0 h-100'
         ></video>
 
         <div className='position-relative text-center' style={{ zIndex: 10}}>

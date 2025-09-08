@@ -24,8 +24,9 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
           position: "absolute",
           top: 0,
           width: "100%",
-          zIndex: 5, // di atas video
-          pointerEvents: "none" // biar ga ganggu klik
+          zIndex: 10,
+          pointerEvents: "none",
+          objectFit: 'contain'
         }}
       />
         <div className={`${style.cover} d-flex flex-column justify-content-center align-items-center h-100`}>
