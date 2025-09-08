@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { useParams } from 'react-router-dom';
 import Cover from './pages/Cover';
@@ -12,8 +12,9 @@ import { Toaster } from 'react-hot-toast';
 import Closing from './components/Closing';
 import  { useAudioRefService ,randomIndex } from './service/audioRefService';
 import MusicPlayer from './components/MusicPlayer';
-import 'animate.css';
 import Attendance from './pages/Attendance';
+import Aos from 'aos';
+import '../node_modules/aos/dist/aos.css';
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,6 +26,9 @@ function App() {
   const { name } = useParams();
   const decodedName = decodeURIComponent(name).replace(/\+/g, " ");
   const capitalizedName = decodedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+   useEffect(() => {
+    Aos.init()
+  }, []);
   
   return (
      <>
@@ -38,7 +42,9 @@ function App() {
           :
           
           <section className='position-relative' style={{ height: '100dvh'}}>
-            <Opening />
+            <div data-aos="zoom-in-up">
+              <Opening />
+            </div>
             <Surah />
             <Couple />
             <Schedule />

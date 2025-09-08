@@ -28,15 +28,15 @@ const Opening = () => {
         ></video>
 
         <div className='position-relative text-center' style={{ zIndex: 10}}>
-          <p className="andada fw-light animate__animated animate__zoomIn animate__slow">THE WEDDING OF</p>
+          <p className="andada fw-light       ">THE WEDDING OF</p>
           <div className="garlicha text-center py-3">
-              <p className="text-warning2 fw-semibold mb-0 me-5 animate__animated animate__slideInUp animate__slow" style={{fontSize: '3.3rem'}}>Sisin &</p>
-              <p className="text-warning2 fw-semibold ms-5 animate__animated animate__slideInDown animate__slow" style={{fontSize: '3.3rem', marginTop:'-1rem'}}>Ikhtiar</p>
+              <p className="text-warning2 fw-semibold mb-0 me-5     Up  " style={{fontSize: '3.3rem'}}>Sisin &</p>
+              <p className="text-warning2 fw-semibold ms-5     Down  " style={{fontSize: '3.3rem', marginTop:'-1rem'}}>Ikhtiar</p>
           </div>
 
-          <p className="andada pb-1 fw-semibold animate__animated animate__zoomIn animate__slow">19.11.2025</p>
+          <p className="andada pb-1 fw-semibold       ">19.11.2025</p>
           <div className="d-flex justify-content-center align-items-center mt-3">
-            <button type='button' className="btn rounded-pill px-3 py-1 bg-primary2 shadow text-white fw-semibold animate__animated animate__fadeInDown">Save The Date</button>
+            <button type='button' className="btn rounded-pill px-3 py-1 bg-primary2 shadow text-white fw-semibold     ">Save The Date</button>
           </div>
         </div>
       </div>

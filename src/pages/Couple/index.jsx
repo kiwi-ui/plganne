@@ -3,9 +3,9 @@ import style from './index.module.css'
 const Couple = () => {
   return (
     <div className={`py-5 text-center px-3 ${style.couple}`}>
-      <p className="andada animate__animated animate__zoomIn animate__slower animate__delay-5s">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
+      <p className="andada           5s">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
       
-      <div className="text-start py-4 ps-md-5 ms-md-5 animate__animated animate__backInRight animate__slower animate__delay-5s">
+      <div className="text-start py-4 ps-md-5 ms-md-5    animate__backInRight      5s">
         <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Anni Syntya, S.Gz</p>
         <div className="">
           <p className="andada mb-0">Putri Bapak H. Husni Tamrin dan Ibu Hj. Sufiatul Jannah</p>
@@ -18,9 +18,9 @@ const Couple = () => {
         </div>
       </div>
 
-      <p className="py-4 fs-3 adine animate__animated animate__jackInTheBox animate__slower animate__delay-5s ">&</p>
+      <p className="py-4 fs-3 adine    animate__jackInTheBox      5s ">&</p>
 
-      <div className="text-end py-4 pe-md-5 me-md-5 animate__animated animate__backInLeft animate__slower animate__delay-5s">
+      <div className="text-end py-4 pe-md-5 me-md-5    animate__backInLeft      5s">
         <p className="analogue mb-1 fs-3 text-warning2 fw-bold">Ikhtiar Rahmatullah, S.IP.</p>
         <div className="">
           <p className="andada mb-0">Putra Bapak H. Moh. Kamil Mahfud</p>

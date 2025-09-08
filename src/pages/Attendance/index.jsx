@@ -69,19 +69,19 @@ const [isLoading, setIsLoading] = useState(false);
     <div className="text-center py-5">
       <div className='container'>   
         <div>
-          <p className="fw-bold fs-2 mb-0 text-warning animate__animated animate__slideInDown animate__slower pb-2">Konfirmasi Kehadiran</p>
+          <p className="fw-bold fs-2 mb-0 text-warning     Down   pb-2">Konfirmasi Kehadiran</p>
         </div>
 
         <div>
           <form name='wishApp' id='form' onSubmit={handleSubmit} method='post'>
-            <div className="mb-3 border-top border-black animate__animated animate__zoomIn animate__slower">
-              <p className="fw-semibold pt-2 fs-5 animate__animated animate__slideInUp animate__slower">Apakah Anda Akan Hadir?</p>
+            <div className="mb-3 border-top border-black       ">
+              <p className="fw-semibold pt-2 fs-5     Up  ">Apakah Anda Akan Hadir?</p>
               
               <div className="row mx-auto justify-content-center w-100 mt-1">
-                <div className="col-6 d-flex justify-content-end animate__animated animate__fadeInLeft animate__delay-1s">
+                <div className="col-6 d-flex justify-content-end     Left  ">
                   <input
                     type="radio"
-                    className="btn-check w-100 animate__animated animate__fadeInLeft animate__delay-1s"
+                    className="btn-check w-100     Left  "
                     name="kehadiran"
                     id="btn-check-outlined"
                     autoComplete="off"
@@ -92,7 +92,7 @@ const [isLoading, setIsLoading] = useState(false);
                   <label className="btn btn-outline-warning w-75 rounded-pill" htmlFor="btn-check-outlined">Ya</label>
                 </div>
 
-                <div className="col-6 d-flex justify-content-start animate__animated animate__fadeInRight animate__delay-1s" style={{zIndex: 100}}>
+                <div className="col-6 d-flex justify-content-start     Right  " style={{zIndex: 100}}>
                   <input
                     type="radio"
                     className="btn-check w-100 "
@@ -108,7 +108,7 @@ const [isLoading, setIsLoading] = useState(false);
               </div>
             </div>
 
-            <button className="btn bg-primary2 mx-auto rounded-2 border-0  shadow-lg  d-flex flex-row align-items-center justify-content-around gap-2 animate__animated animate__zoomIn animate__slower" type="submit">
+            <button className="btn bg-primary2 mx-auto rounded-2 border-0  shadow-lg  d-flex flex-row align-items-center justify-content-around gap-2       " type="submit">
               {
                 isLoading ?
                 <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> :

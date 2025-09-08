@@ -32,25 +32,25 @@ const CountDown = () => {
                 <div className="justify-content-start">
                     {!isEventOver ?
                         <div className="row text-white">
-                            <div className="col-3 animate__animated animate__fadeInLeft animate__delay-1s gx-2">
+                            <div className="col-3     Left   gx-2">
                                 <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.days}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Hari</p>
                                 </div>
                             </div>
-                            <div className="col-3 animate__animated animate__fadeInLeft animate__delay-2s gx-2">
+                            <div className="col-3     Left   gx-2">
                                 <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.hours}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Jam</p>
                                 </div>
                             </div>
-                            <div className="col-3 animate__animated animate__fadeInLeft animate__delay-3s gx-2">
+                            <div className="col-3     Left    3s gx-2">
                                 <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.minutes}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Menit</p>
                                 </div>
                             </div>
-                            <div className="col-3 animate__animated animate__fadeInLeft animate__delay-4s gx-2">
+                            <div className="col-3     Left    4s gx-2">
                                 <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.seconds}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Detik</p>

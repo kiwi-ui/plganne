@@ -8,21 +8,21 @@ const Closing = ({songIndex}) => {
     <div className={`${style.closing}`}>
         <div className="container">
             <div className="d-flex flex-column align-items-center justify-content-center text-center" style={{ height: '100dvh' }}>
-                <div className="animate__animated animate__fadeInDown">
+                <div className="    ">
                     <p className="mb-0">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
                 </div>
 
                 <div>
                 <div>
-                    <p className="animate__animated animate__flipInX animate__slower mb-0">Kami yang berbahagia</p>
+                    <p className="      pInX   mb-0">Kami yang berbahagia</p>
                 </div>
-                <div className="d-flex flex-row justify-content-center align-items-center gap-4 animate__animated animate__fadeInDown">
+                <div className="d-flex flex-row justify-content-center align-items-center gap-4     ">
                     <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Sisin</p>
                     <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '1.4rem' }}>&</p>
                     <p className="greatVibes mb-0 text-warning2" style={{ fontSize: '2rem' }}>Ikhtiar</p>
                 </div>
-                {/* <div className="row py-2 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
-                    <div className='col-6 animate__animated animate__rotateInDownRight d-flex flex-column border border-warning border-top-0 border-bottom-0 border-start-0'>
+                {/* <div className="row py-2 justify-content-center     Up  ">
+                    <div className='col-6    animate__rotateInDownRight d-flex flex-column border border-warning border-top-0 border-bottom-0 border-start-0'>
                         <div>
                         <p className="mb-1 text-decoration-underline fw-semibold text-warning">Keluarga</p>
                         </div>
@@ -33,7 +33,7 @@ const Closing = ({songIndex}) => {
                         </div>
                     </div>
                     
-                    <div className='col-6 animate__animated animate__rotateInDownLeft d-flex flex-column'>
+                    <div className='col-6    animate__rotateInDownLeft d-flex flex-column'>
                         <div>
                         <p className="mb-1 text-decoration-underline fw-semibold text-warning">Keluarga</p>
                         </div>
@@ -45,7 +45,7 @@ const Closing = ({songIndex}) => {
                     </div>
                 </div> */}
 
-                <div className="border-top w-50 mx-auto border-warning animate__animated animate__fadeInUp animate__delay-1s mt-4">
+                <div className="border-top w-50 mx-auto border-warning     Up   mt-4">
                     <p className={`mt-3 mb-3`}>Made With ♥ Divition</p>
                     
                     <div className="d-flex flex-row gap-2 justify-content-center">

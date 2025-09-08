@@ -82,13 +82,13 @@ const Wish = () => {
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >
-            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning animate__animated animate__zoomIn animate__slower">Wishes</p>
-            <p className="animate__animated animate__zoomIn animate__slower">Sampaikan harapan terbaik anda untuk mempelai</p>
+            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning       ">Wishes</p>
+            <p className="      ">Sampaikan harapan terbaik anda untuk mempelai</p>
 
             <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
               <div className="mb-3">
                 <input
-                  className="form-control animate__animated animate__zoomInRight animate__slower"
+                  className="form-control     Right  "
                   placeholder="Nama"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -115,7 +115,7 @@ const Wish = () => {
               <div className="mb-3">
                 {/* <label className="form-label">Harapan</label> */}
                 <textarea
-                  className="form-control animate__animated animate__zoomInLeft animate__slower"
+                  className="form-control     Left  "
                   placeholder="Your wish"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -125,7 +125,7 @@ const Wish = () => {
 
               {/* Tombol */}
               <div className="text-end">
-                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill animate__animated animate__fadeInLeft" disabled={loading} type="submit">
+                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill     Left" disabled={loading} type="submit">
                   {
                     loading ? 
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 
@@ -147,7 +147,7 @@ const Wish = () => {
                   const randomIndex = item.randomIndex ?? 0;
                   
                   return (
-                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2 animate__animated animate__zoomIn animate__slower">
+                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2       ">
                       <div
                         className={`${background[randomIndex]} col-2 d-flex justify-content-center align-items-center rounded-circle`}
                         style={{ height: 50, width: 50 }}
