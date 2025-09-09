@@ -26,8 +26,13 @@ function App() {
   const { name } = useParams();
   const decodedName = decodeURIComponent(name).replace(/\+/g, " ");
   const capitalizedName = decodedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-   useEffect(() => {
-    Aos.init()
+    useEffect(() => {
+    Aos.init({
+      once: false,     // kalau true: animasi hanya sekali
+      mirror: false,   // kalau true: animasi juga muncul saat scroll ke atas
+    });
+
+    Aos.refresh();
   }, []);
   
   return (

@@ -28,7 +28,7 @@ const Opening = () => {
         ></video>
 
         <div className='position-relative text-center' style={{ zIndex: 10}}>
-          <p className="andada fw-light" data-aos="fade-down" data-aos-duration="2800">THE WEDDING OF</p>
+          <p className="andada fw-light" data-aos="fade-down" data-aos-duration="2000">THE WEDDING OF</p>
           <div className="garlicha text-center py-3">
               <p className="text-warning2 fw-semibold mb-0 me-5" data-aos="fade-right" data-aos-duration="2950" style={{fontSize: '3.3rem'}}>Sisin &</p>
               <p className="text-warning2 fw-semibold ms-5" data-aos="fade-left" data-aos-duration="2950" style={{fontSize: '3.3rem', marginTop:'-1rem'}}>Ikhtiar</p>

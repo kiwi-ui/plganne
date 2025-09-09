@@ -66,22 +66,22 @@ const [isLoading, setIsLoading] = useState(false);
     } 
 
   return (
-    <div className="text-center py-5">
+    <div className="text-center py-5 bg-body-tertiary">
       <div className='container'>   
         <div>
-          <p className="fw-bold fs-2 mb-0 text-warning     Down   pb-2">Konfirmasi Kehadiran</p>
+          <p className="fw-bold fs-2 mb-0 text-warning pb-2">Konfirmasi Kehadiran</p>
         </div>
 
         <div>
           <form name='wishApp' id='form' onSubmit={handleSubmit} method='post'>
-            <div className="mb-3 border-top border-black       ">
-              <p className="fw-semibold pt-2 fs-5     Up  ">Apakah Anda Akan Hadir?</p>
+            <div className="mb-3 border-top border-black">
+              <p className="fw-semibold pt-2 fs-5">Apakah Anda Akan Hadir?</p>
               
-              <div className="row mx-auto justify-content-center w-100 mt-1">
-                <div className="col-6 d-flex justify-content-end     Left  ">
+              <div className="row mx-auto justify-content-center mt-1">
+                <div className="col-6 d-flex justify-content-end">
                   <input
                     type="radio"
-                    className="btn-check w-100     Left  "
+                    className="btn-check"
                     name="kehadiran"
                     id="btn-check-outlined"
                     autoComplete="off"
@@ -92,10 +92,10 @@ const [isLoading, setIsLoading] = useState(false);
                   <label className="btn btn-outline-warning w-75 rounded-pill" htmlFor="btn-check-outlined">Ya</label>
                 </div>
 
-                <div className="col-6 d-flex justify-content-start     Right  " style={{zIndex: 100}}>
+                <div className="col-6 d-flex justify-content-start" style={{zIndex: 100}}>
                   <input
                     type="radio"
-                    className="btn-check w-100 "
+                    className="btn-check"
                     name="kehadiran"
                     id="btn-check-outlined2"
                     autoComplete="off"
