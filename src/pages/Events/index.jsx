@@ -9,36 +9,36 @@ const Events = () => {
 
                         <div className="py-5 position-relative" style={{zIndex: 2}}>
                             <div className="border-bottom border-3 border-light w-75 mx-auto mb-4">
-                                <p className="my-3 garlicha text-warning2 fw-semibold     Down    " style={{fontSize: '3rem'}}>Akad Nikah</p>
+                                <p className="my-3 garlicha text-warning2 fw-semibold" style={{fontSize: '3rem'}} data-aos="fade-up" data-aos-duration="2900">Akad Nikah</p>
                             </div>
 
                             <div className="mb-4 mt-4 mx-auto" style={{width: '85%'}}>
-                                <p className="fw-semibold mb-0       ">Minggu, 19 Oktober 2025</p>
-                                <p className='        '>Pukul : 07.30 WIB – Selesai</p>
-                                <div className='        '>
+                                <p className="fw-semibold mb-0" data-aos="fade-up-right" data-aos-duration="2000">Minggu, 19 Oktober 2025</p>
+                                <p className='' data-aos="fade-down-right" data-aos-duration="2000">Pukul : 07.30 WIB – Selesai</p>
+                                <div className='' data-aos="fade-up" data-aos-duration="2000">
                                     <p className="mb-0">Masjid Agung Asy-Syuhada (Masjid Jami’)</p>
                                     <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold     Up">Lokasi Acara</button>
+                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</button>
                                 </div>
                             </div>
                         </div>
 
                         <div className="py-5 position-relative" style={{zIndex: 2}}>
                             <div className="border-bottom border-3 border-light w-75 mx-auto mb-4">
-                                <p className="my-3 garlicha text-warning2 fw-semibold     Down    " style={{fontSize: '3rem'}}>Resepsi</p>
+                                <p className="my-3 garlicha text-warning2 fw-semibold" style={{fontSize: '3rem'}} data-aos="fade-up" data-aos-duration="2900">Resepsi</p>
                             </div>
 
                             <div className="mb-4 mt-4 mx-auto" style={{width: '85%'}}>
-                                <p className="fw-semibold mb-0       ">Minggu, 19 Oktober 2025</p>
-                                <p className="        ">Pukul : 07.30 WIB – Selesai</p>
-                                <div className="        ">
+                                <p className="fw-semibold mb-0" data-aos="fade-up-right" data-aos-duration="2000">Minggu, 19 Oktober 2025</p>
+                                <p className="" data-aos="fade-down-right" data-aos-duration="2000">Pukul : 07.30 WIB – Selesai</p>
+                                <div className="" data-aos="fade-up" data-aos-duration="2000">
                                     <p className="mb-0">Masjid Agung Asy-Syuhada (Masjid Jami’)</p>
                                     <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold     Up">Lokasi Acara</button>
+                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</button>
                                 </div>
                             </div>
                         </div>

@@ -33,25 +33,25 @@ const CountDown = () => {
                     {!isEventOver ?
                         <div className="row text-white">
                             <div className="col-3     Left   gx-2">
-                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
+                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }} data-aos="zoom-in-right" data-aos-duration="2900">
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.days}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Hari</p>
                                 </div>
                             </div>
                             <div className="col-3     Left   gx-2">
-                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
+                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }} data-aos="zoom-in-right" data-aos-duration="2000">
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.hours}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Jam</p>
                                 </div>
                             </div>
                             <div className="col-3     Left    3s gx-2">
-                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
+                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }} data-aos="zoom-in-left" data-aos-duration="2000">
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.minutes}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Menit</p>
                                 </div>
                             </div>
                             <div className="col-3     Left    4s gx-2">
-                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }}>
+                                <div className={` border border-1 text-center d-flex align-items-center flex-column rounded-2 shadow-sm border-2 border border-white`} style={{ background: "#fad7b3ff" }} data-aos="zoom-in-left" data-aos-duration="2900">
                                     <p className={` fw-bold fs-5 pt-1 mb-0`}>{event.seconds}</p>
                                     <p className={`fw-semibold m-0 pb-1`} style={{fontSize:'0.7rem'}}>Detik</p>
                                 </div>
