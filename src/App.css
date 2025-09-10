@@ -2,7 +2,9 @@
     --button-color: #7ea1c3;
     --bs-primary-text: #ebb97a;
 }
-
+body {
+    overflow-x: hidden;
+}
 .buttonColor {
     background-color: var(--button-color);
     color: white;

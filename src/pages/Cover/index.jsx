@@ -6,7 +6,7 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
   const handleOpenMainPage = (e) => {
     e.preventDefault();
     setIsPlaying(true);
-    audioRef.current.play();
+    // audioRef.current.play();
     setTimeout(() => {
       setOpenMainPage(true);
       setScrollBehavior(true);

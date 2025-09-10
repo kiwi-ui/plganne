@@ -38,13 +38,13 @@ function App() {
   return (
      <>
        {
-          // !openMainPage ?
-          // <>
-          //   {/* <BorderFlower /> */}
-          //   <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
-          // </>
+          !openMainPage ?
+          <>
+            {/* <BorderFlower /> */}
+            <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
+          </>
           
-          // :
+          :
           
           <section className='position-relative' style={{ height: '100dvh'}}>
             <Opening />
@@ -53,10 +53,8 @@ function App() {
             <Schedule />
             <Events />
             <Wish />
-            <Attendance name={capitalizedName}/>
             <Closing songIndex={activeIndex} />
             <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
-
           </section>
         }
        <Toaster position="top-center" />

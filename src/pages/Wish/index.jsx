@@ -10,7 +10,6 @@ import { webapp } from '../../utlis/googlesheetDetails';
 const Wish = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
-  const [kehadiran, setKehadiran] = useState("");
   const [wishes, setWishes] = useState([]);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -82,40 +81,41 @@ const Wish = () => {
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >
-            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning       ">Wishes</p>
-            <p className="      ">Sampaikan harapan terbaik anda untuk mempelai</p>
+            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning" data-aos="fade-up" data-aos-duration="2500">Wishes</p>
+            <p data-aos="fade-down" duration="3000">Sampaikan harapan terbaik anda untuk mempelai</p>
 
             <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
               <div className="mb-3">
                 <input
-                  className="form-control     Right  "
+                  className="form-control shadow-sm"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
                   placeholder="Nama"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
 
-              {/* Kehadiran */}
               <div className="mb-3">
-                <label className="form-label">Kehadiran</label>
                 <select
                   className="form-control"
                   name="kehadiran"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
                   value={formData.kehadiran}
-                  onChange={kehadiranListener}   // ✅ pakai ini
+                  onChange={kehadiranListener}
                 >
-                  <option value="" disabled>Pilih Kehadiran</option>
+                  <option value="" disabled>Bisa hadir?</option>
                   <option value="Hadir">Hadir</option>
                   <option value="Tidak Hadir">Tidak Hadir</option>
                 </select>
               </div>
 
-
-              {/* Harapan */}
               <div className="mb-3">
-                {/* <label className="form-label">Harapan</label> */}
                 <textarea
-                  className="form-control     Left  "
+                  className="form-control"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
                   placeholder="Your wish"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
@@ -123,9 +123,8 @@ const Wish = () => {
                 />
               </div>
 
-              {/* Tombol */}
               <div className="text-end">
-                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill     Left" disabled={loading} type="submit">
+                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill" disabled={loading} type="submit" data-aos="zoom-in" data-aos-duration="2400">
                   {
                     loading ? 
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 
@@ -147,7 +146,7 @@ const Wish = () => {
                   const randomIndex = item.randomIndex ?? 0;
                   
                   return (
-                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2       ">
+                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2" data-aos="fade-right" data-aos-duration="3000">
                       <div
                         className={`${background[randomIndex]} col-2 d-flex justify-content-center align-items-center rounded-circle`}
                         style={{ height: 50, width: 50 }}
