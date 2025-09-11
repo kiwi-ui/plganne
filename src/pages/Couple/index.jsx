@@ -9,8 +9,8 @@ const Couple = () => {
       <div className="text-start py-4 ps-md-5 ms-md-5">
         <p className="analogue mb-1 fs-3 text-warning2 fw-bold" data-aos="fade-left" data-aos-duration="2800">Anni Syntya, S.Gz</p>
         <div className="">
-          <p className="andada mb-0" data-aos="fade-down-right" data-aos-duration="2500">Putri Bapak H. Husni Tamrin dan Ibu Hj. Sufiatul Jannah</p>
-          <p className="andada" data-aos="fade-down-left" data-aos-duration="2500">& Ibu Dewi Sudarwati</p>
+          <p className="andada mb-0" data-aos="fade-down-right" data-aos-duration="2500">Putri Bapak H. Husni Tamrin</p>
+          <p className="andada" data-aos="fade-down-left" data-aos-duration="2500">& Ibu Hj. Sufiatul Jannah</p>
         </div>
         <div className='d-inline d-flex justify-content-start'>
           <a href='https://www.instagram.com/annisyntya/' target='__blank' className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2800">
