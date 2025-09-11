@@ -2,11 +2,10 @@ import { CiLock, CiUnlock } from 'react-icons/ci';
 import style from './index.module.css'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScrollBehavior}) => {
+const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, setScrollBehavior}) => {
   const handleOpenMainPage = (e) => {
     e.preventDefault();
     setIsPlaying(true);
-    // audioRef.current.play();
     setTimeout(() => {
       setOpenMainPage(true);
       setScrollBehavior(true);
@@ -51,7 +50,7 @@ const Cover = ({name, isPlaying, setOpenMainPage, setIsPlaying, audioRef, setScr
             </div>
           </div>
           
-          <button className="btn shadow bg-primary2 rounded-pill d-flex flex-row align-items-center gap-2 text-black cormorantG py-1 px-3 text-white fw-semibold" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2 }} data-aos="fade-up" data-aos-duration="1800">
+          <button className="btn shadow-lg bg-primary2 rounded-pill d-flex flex-row align-items-center gap-2 text-black cormorantG py-1 px-3 text-white fw-semibold" type="button" onClick={handleOpenMainPage} style={{ zIndex: 2 }} data-aos="fade-up" data-aos-duration="1800">
             {isPlaying ? <CiUnlock className=''/> : <CiLock />} <p className="mb-0">Buka Undangan</p>
           </button>
         </div>

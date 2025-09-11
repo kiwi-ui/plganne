@@ -87,7 +87,7 @@ const Wish = () => {
             <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
               <div className="mb-3">
                 <input
-                  className="form-control shadow-sm"
+                  className="form-control shadow"
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   placeholder="Nama"
@@ -98,7 +98,7 @@ const Wish = () => {
 
               <div className="mb-3">
                 <select
-                  className="form-control"
+                  className="form-control shadow"
                   name="kehadiran"
                   data-aos="fade-left"
                   data-aos-duration="3000"
@@ -113,7 +113,7 @@ const Wish = () => {
 
               <div className="mb-3">
                 <textarea
-                  className="form-control"
+                  className="form-control shadow"
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   placeholder="Your wish"
@@ -124,7 +124,7 @@ const Wish = () => {
               </div>
 
               <div className="text-end">
-                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill" disabled={loading} type="submit" data-aos="zoom-in" data-aos-duration="2400">
+                <button className="btn bg-primary2 text-white d-flex flex-row align-items-center my-3 gap-2 ms-auto fw-semibold rounded-pill shadow" disabled={loading} type="submit" data-aos="zoom-in" data-aos-duration="2400">
                   {
                     loading ? 
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> 
@@ -139,7 +139,7 @@ const Wish = () => {
             </form>
 
             <div id='wishes' className={`border-top border-2 border-dark-subtle pt-3 mt-4 `}>
-              <ul className="w-100 position-relative ps-4 h-50" style={{ overflowY: 'auto', maxHeight: '300px' }}>
+              <ul className="w-100 position-relative ps-4" style={{ overflowY: 'auto', maxHeight: '300px' }}>
                 {wishes.map((item, index) => {
                   const createdAt = item.created_at?.toDate?.() || new Date();
                   const timeAgo = formatDistance(createdAt, new Date(), { addSuffix: true });

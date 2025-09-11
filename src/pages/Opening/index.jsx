@@ -1,5 +1,6 @@
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import entrance from '../../assets/entrance3.mp4';
+import Reminder from '../../components/Reminder';
 
 const Opening = () => {
   return (
@@ -36,7 +37,9 @@ const Opening = () => {
 
           <p className="andada pb-1 fw-semibold" data-aos="fade-up" data-aos-duration="3000">19.11.2025</p>
           <div className="d-flex justify-content-center align-items-center mt-3" data-aos="fade-down" data-aos-duration="2200">
-            <button type='button' className="btn rounded-pill px-3 py-1 bg-primary2 shadow text-white fw-semibold">Save The Date</button>
+            <button type='button' className="btn shadow-sm">
+              <Reminder />
+            </button>
           </div>
         </div>
       </div>

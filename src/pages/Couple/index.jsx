@@ -13,9 +13,9 @@ const Couple = () => {
           <p className="andada" data-aos="fade-down-left" data-aos-duration="2500">& Ibu Dewi Sudarwati</p>
         </div>
         <div className='d-inline d-flex justify-content-start'>
-          <div className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2800">
-            <CgInstagram className="fs-5 text-white"/>
-          </div>
+          <a href='https://www.instagram.com/annisyntya/' target='__blank' className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2800">
+            <CgInstagram  className="fs-5 text-white shadow-lg"/>
+          </a>
         </div>
       </div>
 
@@ -28,9 +28,9 @@ const Couple = () => {
           <p className="andada" data-aos="fade-down-left" data-aos-duration="2500"> & Ibu Hj. Imamah</p>
         </div>
         <div className='d-inline d-flex justify-content-end'>
-          <div className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2800">
-            <CgInstagram className="fs-5 text-white"/>
-          </div>
+          <a href='https://www.instagram.com/ikhtiar_r/' target='__blank'  className="d-flex bg-primary2 p-2 border border-1 border-white rounded-circle justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="2800">
+            <CgInstagram className="fs-5 text-white shadow-lg"/>
+          </a>
         </div>
       </div>
     </div>

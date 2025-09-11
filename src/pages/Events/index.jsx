@@ -20,7 +20,7 @@ const Events = () => {
                                     <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</button>
+                                    <a href='https://maps.app.goo.gl/9QRSbXffJ1YwBXRx8' target='__blank'  type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold shadow" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</a>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Events = () => {
                                     <p className="fw-semibold">Jl. Mesigit No.23, Kabupaten Pamekasan</p>
                                 </div>
                                 <div className="mb-4">
-                                    <button type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</button>
+                                    <a href='https://maps.app.goo.gl/9QRSbXffJ1YwBXRx8' target='__blank'  type="button" className="btn bg-primary2 border border-1  border-white px-3 py-1 text-white rounded-pill fw-semibold shadow" data-aos="fade-down" data-aos-duration="1800">Lokasi Acara</a>
                                 </div>
                             </div>
                         </div>

@@ -51,9 +51,9 @@ useEffect(() => {
 }, [isPlaying]);
 
 return (
-    <div className={ `text-center text-white me-3 mt-3 music position-absolute top-0 end-0` } onClick={ toggleSong } style={{zIndex: 100}}>
+    <div className={ `text-white me-3 mt-3 music position-absolute top-0 end-0` } onClick={ toggleSong } style={{zIndex: 100}}>
         <button className={ `d-flex align-items-center justify-items-center my-3 mx-1 position-relative bg-transparent rounded-circle border-0` }>
-            <BsDiscFill className="bg-transparent rounded-circle fs-2 text-warning" style={{ transform: isPlaying ? `rotate(${isRotating}deg)` : `rotate(${isRotating})` }}/>
+            <BsDiscFill className="bg-transparent rounded-circle fs-2 text-warning2 shadow-lg" style={{ transform: isPlaying ? `rotate(${isRotating}deg)` : `rotate(${isRotating})` }}/>
         </button>
     </div>
     )

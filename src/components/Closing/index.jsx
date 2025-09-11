@@ -9,14 +9,14 @@ const Closing = ({songIndex}) => {
         <div className="container">
             <div className="d-flex flex-column align-items-center justify-content-center text-center" style={{ height: '100dvh' }}>
                 <div>
-                    <p className="mb-0" data-aos="fade-right-up" data-aos-duration="3000">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
+                    <p className="mb-0 container" data-aos="fade-right-up" data-aos-duration="3000">Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.</p>
                 </div>
 
                 <div>
                 <div>
                     <p className="mb-0" data-aos="fade-left-up" data-aos-duration="3000">Kami yang berbahagia</p>
                 </div>
-                <div className="d-flex flex-row justify-content-center align-items-center gap-4     ">
+                <div className="d-flex flex-row justify-content-center align-items-center gap-4 py-3">
                     <p className="greatVibes mb-0 text-warning2" data-aos="fade-left" data-aos-duration="3000" style={{ fontSize: '2rem' }}>Sisin</p>
                     <p className="greatVibes mb-0 text-warning2" data-aos="zoom-in" data-aos-duration="2000" style={{ fontSize: '1.4rem' }}>&</p>
                     <p className="greatVibes mb-0 text-warning2" data-aos="fade-right" data-aos-duration="3000" style={{ fontSize: '2rem' }}>Ikhtiar</p>
@@ -45,8 +45,8 @@ const Closing = ({songIndex}) => {
                     </div>
                 </div> */}
 
-                <div className="border-top w-50 mx-auto border-warning     Up   mt-4">
-                    <p className={`mt-3 mb-3`} data-aos="fade-up" data-aos-duration="3000">Made With ♥ Divition</p>
+                <div className="border-top w-50 mx-auto border-warning">
+                    <p className="mt-3 mb-3 fw-semibold" data-aos="fade-up" data-aos-duration="3000">Made With ♥ Divition</p>
                     
                     <div className="d-flex flex-row gap-2 justify-content-center">
                     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up-left" data-aos-duration="3000" href="https://www.instagram.com/yanggaraa/">
