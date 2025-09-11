@@ -3,7 +3,7 @@
     --bs-primary-text: #ebb97a;
 }
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .buttonColor {
     background-color: var(--button-color);
