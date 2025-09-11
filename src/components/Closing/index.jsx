@@ -17,9 +17,9 @@ const Closing = ({songIndex}) => {
                     <p className="mb-0" data-aos="fade-left-up" data-aos-duration="3000">Kami yang berbahagia</p>
                 </div>
                 <div className="d-flex flex-row justify-content-center align-items-center gap-4 py-3">
-                    <p className="greatVibes mb-0 text-warning2" data-aos="fade-left" data-aos-duration="3000" style={{ fontSize: '2rem' }}>Sisin</p>
-                    <p className="greatVibes mb-0 text-warning2" data-aos="zoom-in" data-aos-duration="2000" style={{ fontSize: '1.4rem' }}>&</p>
-                    <p className="greatVibes mb-0 text-warning2" data-aos="fade-right" data-aos-duration="3000" style={{ fontSize: '2rem' }}>Ikhtiar</p>
+                    <p className="garlicha mb-0 text-warning2 fw-bold" data-aos="fade-left" data-aos-duration="3000" style={{ fontSize: '2.3rem' }}>Sisin</p>
+                    <p className="garlicha mb-0 text-warning2" data-aos="zoom-in" data-aos-duration="2000" style={{ fontSize: '1.4rem' }}>&</p>
+                    <p className="garlicha mb-0 text-warning2 fw-bold" data-aos="fade-right" data-aos-duration="3000" style={{ fontSize: '2.3rem' }}>Ikhtiar</p>
                 </div>
                 {/* <div className="row py-2 justify-content-center     Up  ">
                     <div className='col-6    animate__rotateInDownRight d-flex flex-column border border-warning border-top-0 border-bottom-0 border-start-0'>
@@ -55,17 +55,17 @@ const Closing = ({songIndex}) => {
                     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="3000" href="https://wa.link/0gd2cu">
                         <IoLogoWhatsapp className="text-warning2 fs-3"/>
                     </a>
-                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://www.youtube.com/watch?v=K3h4I1NG5t8&list=RDK3h4I1NG5t8&start_radio=1">
+                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/Kr2yjnRvW_M?si=yHVWr9uiJp8W1O7p">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
                     {songIndex ==  1 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://www.youtube.com/watch?v=J0yGi5Y4ur0">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/WzDj70Pf21M?si=RguAFs4RoJaqwsvz">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
                     {songIndex ==  2 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://www.youtube.com/watch?v=byFVhphHw3M">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/uaqnG8IvXcI?si=rT24O15sT7jqxmDV">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
