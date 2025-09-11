@@ -81,7 +81,7 @@ const Wish = () => {
       <div className="container text-center">
         <div className="">
           <div className="text-dark" >
-            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning2" data-aos="fade-up" data-aos-duration="2500">Wishes</p>
+            <p className="fw-bold fs-3 mb-2 text-warning2 text-warning2 andada" data-aos="fade-up" data-aos-duration="2500">Wishes</p>
             <p data-aos="fade-down" duration="3000">Sampaikan harapan terbaik anda untuk mempelai</p>
 
             <form name="wishApp" id='form' className="text-start" onSubmit={sendWish}>
