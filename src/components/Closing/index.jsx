@@ -49,7 +49,7 @@ const Closing = ({songIndex}) => {
                     <p className="mt-3 mb-3 fw-semibold" data-aos="fade-up" data-aos-duration="3000">Made With ♥ Divition</p>
                     
                     <div className="d-flex flex-row gap-2 justify-content-center">
-                    <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up-left" data-aos-duration="3000" href="https://www.instagram.com/yanggaraa/">
+                    <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up-left" data-aos-duration="3000" href="https://www.instagram.com/divit.ion">
                         <AiFillInstagram className="text-warning2 fs-3"/>
                     </a>
                     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="3000" href="https://wa.link/0gd2cu">
@@ -65,7 +65,7 @@ const Closing = ({songIndex}) => {
                         </a>
                     }
                     {songIndex ==  2 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/uaqnG8IvXcI?si=rT24O15sT7jqxmDV">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/07cLcL7CZbw?si=_gWg5Ax4euCgRriC">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
