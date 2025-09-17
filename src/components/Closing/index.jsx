@@ -55,17 +55,17 @@ const Closing = ({songIndex}) => {
                     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" data-aos="fade-up" data-aos-duration="3000" href="https://wa.link/0gd2cu">
                         <IoLogoWhatsapp className="text-warning2 fs-3"/>
                     </a>
-                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/Kr2yjnRvW_M?si=yHVWr9uiJp8W1O7p">
-                        <FaItunesNote className="text-warning2 fs-3"/>
-                        </a>
-                    }
-                    {songIndex ==  1 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/WzDj70Pf21M?si=RguAFs4RoJaqwsvz">
+                    {songIndex ==  0 &&     <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/6wM5GJVwgJo">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }
                     {songIndex ==  2 &&
-                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/07cLcL7CZbw?si=_gWg5Ax4euCgRriC">
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/60LVirWsTtc">
+                        <FaItunesNote className="text-warning2 fs-3"/>
+                        </a>
+                    }
+                    {songIndex ==  1 &&
+                        <a className="p-2 bgIcon rounded-circle d-flex align-content-center" target='blank' data-aos="fade-up-right" data-aos-duration="3000" href="https://youtu.be/rlqY5jhWCnE">
                         <FaItunesNote className="text-warning2 fs-3"/>
                         </a>
                     }

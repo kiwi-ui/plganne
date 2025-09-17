@@ -4,6 +4,7 @@ import { BsDiscFill } from 'react-icons/bs';
 const MusicPlayer = ({audioRef, isPlaying, setIsPlaying}) => {
     const rotateRef = useRef(0);
     const [isRotating, setIsRotating] = useState(0);
+    
     const toggleSong = () => {
         const audio = audioRef.current;
         if (isPlaying) {

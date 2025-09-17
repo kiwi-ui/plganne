@@ -10,13 +10,12 @@ import Events from './pages/Events';
 import Wish from './pages/Wish';
 import { Toaster } from 'react-hot-toast';
 import Closing from './components/Closing';
-import  { useAudioRefService } from './service/audioRefService';
+import  { randomIndex, useAudioRefService } from './service/audioRefService';
 import MusicPlayer from './components/MusicPlayer';
 import Aos from 'aos';
 import '../node_modules/aos/dist/aos.css';
 
 function App() {
-  const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [scrollBehavior, setScrollBehavior] = useState(false);
   const [openMainPage, setOpenMainPage] = useState(false);
@@ -25,10 +24,10 @@ function App() {
   const decodedName = decodeURIComponent(name).replace(/\+/g, " ");
   const capitalizedName = decodedName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     useEffect(() => {
-    Aos.init({
-      once: false,   
-      mirror: false,
-    });
+      Aos.init({
+        once: false,   
+        mirror: false,
+      });
 
     Aos.refresh();
   }, []);
@@ -38,7 +37,6 @@ function App() {
        {
           !openMainPage ?
           <>
-            {/* <BorderFlower /> */}
             <Cover name={capitalizedName} isPlaying={isPlaying} setOpenMainPage={setOpenMainPage} setIsPlaying={setIsPlaying} setScrollBehavior={setScrollBehavior} /> 
           </>
           
@@ -51,7 +49,7 @@ function App() {
             <Schedule />
             <Events />
             <Wish />
-            <Closing songIndex={activeIndex} />
+            <Closing songIndex={randomIndex} />
             <MusicPlayer audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} />
           </section>
         }

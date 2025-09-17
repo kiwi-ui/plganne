@@ -1,9 +1,9 @@
-import biw from '../assets/music/mh.mp3';
-import kss from '../assets/music/ttnc.mp3';
-import skmm from '../assets/music/skmm.mp3';
+import gh from '../assets/music/gh.mp3';
+import lwa from '../assets/music/lwa.mp3';
+import blue from '../assets/music/blue.mp3';
 
 export const musics = [
-    biw,
-    kss,
-    skmm
+    gh,
+    lwa,
+    blue
 ]
