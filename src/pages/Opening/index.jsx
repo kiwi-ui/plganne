@@ -35,7 +35,7 @@ const Opening = () => {
               <p className="text-warning2 fw-semibold ms-5" data-aos="fade-left" data-aos-duration="2950" style={{fontSize: '3.3rem', marginTop:'-1rem'}}>Ikhtiar</p>
           </div>
 
-          <p className="andada pb-1 fw-semibold" data-aos="fade-up" data-aos-duration="3000">19.11.2025</p>
+          <p className="andada pb-1 fw-semibold" data-aos="fade-up" data-aos-duration="3000">19.10.2025</p>
           <div className="d-flex justify-content-center align-items-center mt-3" data-aos="fade-down" data-aos-duration="2200">
             <button type='button' className="btn shadow-sm">
               <Reminder />
