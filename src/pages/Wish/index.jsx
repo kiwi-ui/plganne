@@ -146,7 +146,7 @@ const Wish = () => {
                   const randomIndex = item.randomIndex ?? 0;
                   
                   return (
-                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2" data-aos="fade-right" data-aos-duration="3000">
+                    <li key={index} className="list-unstyled row my-4 w-100 justify-content-center gap-2">
                       <div
                         className={`${background[randomIndex]} col-2 d-flex justify-content-center align-items-center rounded-circle`}
                         style={{ height: 50, width: 50 }}
