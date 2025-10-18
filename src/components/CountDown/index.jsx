@@ -10,7 +10,7 @@ const CountDown = () => {
     const [isEventOver, setIsEventOver] = useState(false)
 
     useEffect(() => {
-        const targetDate = new Date('2025-10-19T19:00:00');
+        const targetDate = new Date('2025-10-19T07:30:00');
 
         setInterval(() => {
             const currentDate = new Date();
